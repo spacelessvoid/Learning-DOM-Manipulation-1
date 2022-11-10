@@ -1,0 +1,149 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 32px;
+	background-color: #111;
+	color: cornsilk;
+}
+
+.top,
+.bottom {
+	margin-block: 30px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.greeting {
+	margin-inline: auto;
+	margin-block: 30px;
+	width: 60%;
+}
+
+.red {
+	color: firebrick;
+	font-weight: bolder;
+}
+
+.game-active {
+	font-size: 14px;
+	line-height: 20px;
+	font-style: italic;
+}
+
+.hint {
+	font-size: 32px;
+	line-height: 34px;
+	font-style: normal;
+	margin-bottom: 20px;
+	overflow-y: hidden;
+}
+
+.btn-wrapper {
+	background-color: firebrick;
+	font-size: 26px;
+}
+
+.btn {
+	background-color: #111;
+	color: firebrick;
+	border: none;
+	padding: .5rem 1.5rem;
+	font-size: 20px;
+	font-weight: bolder;
+	width: fit-content;
+}
+
+.numbers-row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 30px auto 50px;
+}
+
+.number {
+	font-size: 2em;
+	padding: .5rem 2rem;
+	margin: 10px;
+	border: 10px solid cornsilk;
+	border-radius: 2rem;
+	font-weight: bolder;
+	background-color: #111;
+	color: cornsilk;
+}
+
+.number-wrong {
+	color: firebrick;
+	border-color: firebrick;
+}
+
+.number-correct {
+	color: forestgreen;
+	border-color: forestgreen;
+}
+
+.the-end-img {
+	max-width: 200px;
+	justify-self: center;
+	align-self: center;
+}
+
+.the-end-text {
+	margin-inline: auto;
+	margin-block: 30px;
+	width: 60%;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+
+	font-size: 1em;
+	background-color: #222;
+	padding: 6rem;
+	border-radius: 5px;
+	box-shadow: 0 3rem 5rem rgba(83, 83, 83, 0.3);
+	z-index: 10;
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(83, 83, 83, 0.6);
+	backdrop-filter: blur(3px);
+	z-index: 5;
+}
+
+.close-modal {
+	position: absolute;
+	top: 1.2rem;
+	right: 2rem;
+	font-size: 5rem;
+	color: #333;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.total-wrapper {
+	display: flex;
+	height: 100vh;
+}
+
+.inside-the-wrapper {
+	margin: auto;
+	width: 100%;
+}

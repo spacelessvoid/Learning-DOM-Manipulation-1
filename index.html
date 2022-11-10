@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess the number</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="total-wrapper">
+    <div class="inside-the-wrapper">
+      <header class="top">
+        <h1>A mysterious stranger appears before you</h1>
+        <p class="greeting">“Greetings, traveler!<br>We should play a little game. Can you guess my number in&nbsp;<span
+            class="red">3&nbsp;tries</span>? Well, you must if you wish to continue your&nbsp;journey...”&nbsp;😈</p>
+        <div class="game-active hidden">
+          <p class="hint">“You have three attempts. Give it a shot.”</p>
+          <p>To guess, <span class="red">click the numbers below</span> or <span class="red">press keys 1-9</span> on
+            your keyboard</p>
+        </div>
+      </header>
+      <section class="numbers-row hidden">
+        <!-- <div class="number" id="num-0">0</div> -->
+        <button class="number" id="num-1">1</button>
+        <button class="number" id="num-2">2</button>
+        <button class="number" id="num-3">3</button>
+        <button class="number" id="num-4">4</button>
+        <button class="number" id="num-5">5</button>
+        <button class="number" id="num-6">6</button>
+        <button class="number" id="num-7">7</button>
+        <button class="number" id="num-8">8</button>
+        <button class="number" id="num-9">9</button>
+      </section>
+      <footer class="bottom">
+        <div class="btn-wrapper">
+          <button class="btn btn-start">Let's begin</button>
+        </div>
+        <div class="btn-wrapper">
+          <button class="btn btn-end hidden">RUN AWAY INSTEAD</button>
+        </div>
+
+      </footer>
+    </div>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <img class="the-end-img hidden" id="img-1" src="img/Soul_of_the_Dancer.webp" alt="">
+      <img class="the-end-img hidden" id="img-2" src="img/Alluring_Skull_(DSIII).webp" alt="">
+      <img class="the-end-img hidden" id="img-3" src="img/Rusted_Gold_Coin.webp" alt="">
+      <p class="the-end-text"></p>
+    </div>
+    <div class="overlay hidden"></div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
